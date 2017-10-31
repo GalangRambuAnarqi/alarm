@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="galang.alarmmanager.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALARM DEMO"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginTop="51dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START ALARM"
+        android:onClick="startSomething"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="99dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_marginTop="56dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:onClick="stopSomething"
+        android:layout_height="wrap_content"
+        android:text="Stop ALARM"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="191dp"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" />
+</RelativeLayout>
